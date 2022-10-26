@@ -1,0 +1,51 @@
+:root {
+    --background: #31393c;
+    --main-color: #dcd6f7;
+    --form-color: #a6b1e1;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+}
+
+.wrapper {
+    display: flex;
+    margin: 20px;
+    background-color: var(--main-color);
+    border-radius: 1%;
+    overflow: hidden;
+    gap: 10px;
+    width: 70%;
+}
+
+.img-container {
+    display: flex;
+    width: 500px;
+    overflow: hidden;
+}
+
+img {
+    width: 900px;
+    margin-left: -200px;
+}
+
+h1 {
+    margin-left: 2rem;
+}
+
+form {
+    margin: 100px 10px 0px 90px;
+    max-width: 40rem;
+    max-height: 40rem;
+    display: flex;
+}
+
+
+fieldset {
+    background-color: var(--main-color);
+    border-style: none;
+}
