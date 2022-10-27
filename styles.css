@@ -19,7 +19,7 @@
 body {
     display: flex;
     align-items: center;
-    background-color: var(--main-color);
+    background-image: linear-gradient(to right, #a57565, #FAF5F1);
 }
 
 .wrapper {
