@@ -113,6 +113,10 @@ button {
     font-size: 15px;
 }
 
+.log-in {
+    text-decoration: none;
+}
+
 /*Pseudo-classes*/
 input:focus {
     outline-color: var(--input-focus-color);
