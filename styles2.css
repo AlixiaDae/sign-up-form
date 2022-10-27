@@ -1,0 +1,39 @@
+:root {
+    --main-color: #deb9a7;
+    --input-color: #eeded2;
+    --input-focus-color: #98796e;
+    --valid-input: #91da91;
+
+    --button-color: #5aaad8;
+    --button-hover: #4b93bd;
+}
+
+* {
+    font-family: "Ubuntu";
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./pics/login.jpg');
+    background-size: 100%;
+}
+
+.wrapper {
+    margin: 40px auto;
+    height: 800px;
+    width: 500px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
+.wrapper-content {
+    padding-top: 30px;
+    text-align: center;
+}
+
+h1 {
+    letter-spacing: 2px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
