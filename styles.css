@@ -2,6 +2,9 @@
     --main-color: #deb9a7;
     --input-color: #eeded2;
     --input-focus-color: #98796e;
+
+    --button-color: #5aaad8;
+    --button-hover: #4b93bd;
 }
 
 * {
@@ -19,22 +22,23 @@ body {
 }
 
 .wrapper {
-    margin: 90px auto;
+    margin: 65px auto;
     display: flex;
     width: 1000px;
     background-color: white;
-    border-radius: 10%;
+    border-radius: 15px;
     overflow: hidden;
-    height: 700px;
+    height: 800px;
 }
 
 .img-wrapper {
+    min-width: 500px;
     position: relative;
 }
 
-img {
-    max-width: 500px;
-    height: 700px;
+.side-image {
+    width: 500px;
+    height: 800px;
 }
 
 .caption {
@@ -44,60 +48,76 @@ img {
 }
 
 .form-wrapper {
+    max-width: 500px;
     text-align: center;
-    margin: 80px auto;
+    padding-top: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    background-color: var(--main-color);
+    height: 120px;
+    width: 120px;
+    margin-bottom: 10px;
 }
 
 fieldset {
     border-style: none;
+
+    font-size: 24px;
+    letter-spacing: 1px;
 }
 
 legend {
-    font-size: 30px;
-    margin-bottom: 30px;
-
-    color: rgb(36, 35, 35);
+    margin-bottom: 12px;
 }
 
-
-input, label {
+label, input {
     display: block;
-    margin-top: 5px;
-    font-size: 15px;
+}
 
-    color: rgb(36, 35, 35);
+label {
+    font-size: 12px;
+    margin-bottom: 3px;
 }
 
 input {
-    border: 2px solid var(--input-color);
+    width: 200px;
     height: 30px;
-    border-radius: 4px;
-    width: 280px;
-    padding: 3px;
+    margin: 0 auto;
+    margin-bottom: 5px;
+
+    border: 2px solid var(--input-color);
+    border-radius: 3px;
 }
 
 button {
-    margin-top: 40px;
-    margin-bottom: 15px;
-    font-size: 20px;
-    border-style: none;
+    background-color: var(--button-color);
     padding: 10px;
-    border-radius: 10px;
-    
-    background-color: #196781;
-    color: rgb(255, 255, 255);
+    margin-top: 25px;
+    margin-bottom: 20px;
+    width: 140px;
+
+    border: 0 none;
+    border-radius: 7px;
+
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
 }
 
 .log-in-page {
     font-size: 15px;
 }
 
-/*Psuedo-classes*/
-
+/*Pseudo-classes*/
 input:focus {
     outline-color: var(--input-focus-color);
 }
 
 button:hover {
-    background-color: #15566b;
+    background-color: var(--button-hover);
 }
