@@ -1,6 +1,7 @@
 :root {
     --main-color: #deb9a7;
-    --form-color: #eeded2;
+    --input-color: #eeded2;
+    --input-focus-color: #98796e;
 }
 
 * {
@@ -27,9 +28,19 @@ body {
     height: 700px;
 }
 
+.img-wrapper {
+    position: relative;
+}
+
 img {
     max-width: 500px;
     height: 700px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 140px;
 }
 
 .form-wrapper {
@@ -58,7 +69,7 @@ input, label {
 }
 
 input {
-    border: 2px solid var(--form-color);
+    border: 2px solid var(--input-color);
     height: 30px;
     border-radius: 4px;
     width: 280px;
@@ -67,6 +78,7 @@ input {
 
 button {
     margin-top: 40px;
+    margin-bottom: 15px;
     font-size: 20px;
     border-style: none;
     padding: 10px;
@@ -74,4 +86,18 @@ button {
     
     background-color: #196781;
     color: rgb(255, 255, 255);
+}
+
+.log-in-page {
+    font-size: 15px;
+}
+
+/*Psuedo-classes*/
+
+input:focus {
+    outline-color: var(--input-focus-color);
+}
+
+button:hover {
+    background-color: #15566b;
 }
