@@ -1,51 +1,77 @@
 :root {
-    --background: #31393c;
-    --main-color: #dcd6f7;
-    --form-color: #a6b1e1;
+    --main-color: #deb9a7;
+    --form-color: #eeded2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Ubuntu";
 }
 
 body {
-    margin: 0;
-    height: 100vh;
     display: flex;
-    justify-content: center;
-    background-color: var(--background);
+    align-items: center;
+    background-color: var(--main-color);
 }
 
 .wrapper {
+    margin: 90px auto;
     display: flex;
-    margin: 20px;
-    background-color: var(--main-color);
-    border-radius: 1%;
+    width: 1000px;
+    background-color: white;
+    border-radius: 10%;
     overflow: hidden;
-    gap: 10px;
-    width: 70%;
-}
-
-.img-container {
-    display: flex;
-    width: 500px;
-    overflow: hidden;
+    height: 700px;
 }
 
 img {
-    width: 900px;
-    margin-left: -200px;
+    max-width: 500px;
+    height: 700px;
 }
 
-h1 {
-    margin-left: 2rem;
+.form-wrapper {
+    text-align: center;
+    margin: 80px auto;
 }
-
-form {
-    margin: 100px 10px 0px 90px;
-    max-width: 40rem;
-    max-height: 40rem;
-    display: flex;
-}
-
 
 fieldset {
-    background-color: var(--main-color);
     border-style: none;
+}
+
+legend {
+    font-size: 30px;
+    margin-bottom: 30px;
+
+    color: rgb(36, 35, 35);
+}
+
+
+input, label {
+    display: block;
+    margin-top: 5px;
+    font-size: 15px;
+
+    color: rgb(36, 35, 35);
+}
+
+input {
+    border: 2px solid var(--form-color);
+    height: 30px;
+    border-radius: 4px;
+    width: 280px;
+    padding: 3px;
+}
+
+button {
+    margin-top: 40px;
+    font-size: 20px;
+    border-style: none;
+    padding: 10px;
+    border-radius: 10px;
+    
+    background-color: #196781;
+    color: rgb(255, 255, 255);
 }
