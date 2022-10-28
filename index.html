@@ -34,8 +34,11 @@
                     <label for="phone_number">PHONE NUMBER</label>
                     <input type="tel" name="phone_number" id="phone_number">
 
-                    <label for="pwd">PASSWORD *</label>
-                    <input type="password" name="pwd" id="pwd" required>
+                    <div class="pwd-input-container">
+                        <label for="pwd">PASSWORD *</label>
+                        <input type="password" name="pwd" id="pwd" required>
+                        <p class="pwd-message">Password must be 8-20 characters long</p>
+                    </div>
 
                     <label for="confirm_pwd">CONFIRM PASSWORD *</label>
                     <input type="password" name="confirm_pwd" id="confirm_pwd" required>

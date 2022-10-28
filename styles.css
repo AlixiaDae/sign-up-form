@@ -96,6 +96,25 @@ input {
     border-radius: 3px;
 }
 
+.pwd-input-container {
+    position: relative;
+}
+
+.pwd-message {
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    right: -95px;
+    width: 90px;
+    padding: 3px;
+
+    font-size: 10px;
+    background-color: var(--input-color);
+    border-radius: 5px;
+    box-shadow: 2px 2px var(--input-focus-color);
+    transition: 0.2s;
+}
+
 button {
     background-color: var(--button-color);
     padding: 10px;

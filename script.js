@@ -22,3 +22,15 @@ inputs.forEach((input) => {
             validate(e.target, patterns[e.target.attributes.name.value])
         })
 })
+
+
+const pwdMessage = document.querySelector('.pwd-message');
+const pwdInput = document.getElementById('pwd');
+
+pwdInput.addEventListener('keyup', () => {
+    if(pwdInput.className == 'invalid') {
+        pwdMessage.style.opacity = '100%'
+    } else {
+        pwdMessage.style.opacity = '0';
+    }
+})
